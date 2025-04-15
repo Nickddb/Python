@@ -1,0 +1,11 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+    background-color: crimson;
+}
+
+#produtos-container{
+    display: grid;
+    grid-template-columns: (auto-fit, minmax, (250px, 1fr));
+    gap: 20px;
+}
