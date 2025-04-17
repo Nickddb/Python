@@ -10,7 +10,7 @@ function fetchProdutos (){
 }
 
 function renderProdutos(produtos){
-    const container = document.getElementById("Produtos-container");
+    const container = document.getElementById("produtos-container");
     container.innerHTML = "";
 
     produtos.forEach(produto => {
@@ -18,10 +18,10 @@ function renderProdutos(produtos){
         const card = document.createElement("div");
         card.className = "produto";
         card.innerHTML = `
-        <div class="imagem-container">
-         <img src="${produto.imagem}" alt="${produto.nome}" />
-        </div>
         <h2>${produto.nome}</h2>
+            <div class="imagem-container">
+                <img src="${produto.imagem}" alt="${produto.nome}" />
+            </div>
         <p>${produto.descricao}</p>
         <p class="preco"> R$ ${produto.preco}</p>
         <p><strong>categoria:</strong> ${produto.categoria.nome}</p>
